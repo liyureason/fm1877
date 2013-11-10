@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        >
+        <TextView android:id="@+id/guangbo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="广播"
+            style="@style/textview_home"/>
+        <View android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#19A1E5"/>
+        <TextView android:id="@+id/yingyue"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="音乐"
+            style="@style/textview_home"/>
+        
+    </LinearLayout>    
+    <View android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#19A1E5"/>
+    
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        >
+        <TextView android:id="@+id/wenzhang"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="文章"
+            style="@style/textview_home"/>
+         <View android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#19A1E5"/>
+        <TextView android:id="@+id/aboutme"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="关于我们"
+            style="@style/textview_home"/>
+        
+    </LinearLayout>    
+        
+    </LinearLayout>
+    <ImageView 
+               android:layout_width="40dp"
+               android:layout_height="40dp"
+               android:background="@drawable/home_logo"
+               android:layout_gravity="center"/>
+
+</FrameLayout>
