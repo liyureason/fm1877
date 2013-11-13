@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical" 
-    android:padding="10dp">
+        android:id="@+id/content"
+        android:layout_width="320dip"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:background="#e9e9e9"
+        android:visibility="visible" >
 
     <ImageView
         android:layout_width="wrap_content"
@@ -65,31 +67,36 @@
             <ImageButton
                 android:id="@+id/mode"
                 style="@style/player_button"
-                android:layout_weight="1" />
+                android:layout_weight="1" 
+                android:src="@drawable/xunhuan"/>
 
             <ImageButton
                 android:id="@+id/kuaitui"
                 style="@style/player_button"
-                android:layout_weight="1" />
+                android:layout_weight="1" 
+                android:src="@drawable/kuaitui"/>
 
             <ImageButton
                 android:id="@+id/play"
                 style="@style/player_button"
-                android:layout_weight="1" />
+                android:layout_weight="1" 
+                android:src="@drawable/kaishi"/>
 
             <ImageButton
                 android:id="@+id/kuaijin"
                 style="@style/player_button"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:src="@drawable/xunhuan" />
 
             <ImageButton
                 android:id="@+id/xihuan"
                 style="@style/player_button"
-                android:layout_weight="1" />
+                android:layout_weight="1" 
+                android:src="@drawable/xihuan"/>
         </LinearLayout>
     </LinearLayout>
 
-    <TextView
+    <ListView
         android:id="@+id/player_textview"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent" />

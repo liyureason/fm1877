@@ -3,6 +3,7 @@ package com.beijing.fm1877.activity;
 import com.beijing.fm1877.R;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -24,12 +25,16 @@ public class HomeActivity extends Activity implements OnClickListener{
 	public void onClick(View v) {
 		switch(v.getId()){
 		case R.id.guangbo:
+			startActivity(new Intent(HomeActivity.this,guangbo.class));
 			break;
 		case R.id.yingyue:
+			startActivity(new Intent(HomeActivity.this,yinyue.class));
 			break;
 		case R.id.wenzhang:
+			startActivity(new Intent(HomeActivity.this,wenzhang.class));
 			break;
 		case R.id.aboutme:
+			startActivity(new Intent(HomeActivity.this,aboutme.class));
 			break;
 		}
 		
