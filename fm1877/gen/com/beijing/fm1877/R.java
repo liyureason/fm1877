@@ -13,8 +13,8 @@ public final class R {
     public static final class color {
         public static final int baseColor=0x7f040003;
         public static final int bgColor=0x7f040001;
+        public static final int black=0x7f040000;
         public static final int border_line=0x7f040002;
-        public static final int textColor=0x7f040000;
     }
     public static final class dimen {
         /**  Default screen margins, per the Android Design guidelines. 
@@ -89,17 +89,18 @@ public final class R {
         public static final int rewind_blue=0x7f02003b;
         public static final int right_blue=0x7f02003c;
         public static final int star_icon=0x7f02003d;
-        public static final int stop_blue=0x7f02003e;
-        public static final int timer_blue=0x7f02003f;
-        public static final int tools_blue=0x7f020040;
-        public static final int top_bar_bg=0x7f020041;
-        public static final int up_blue=0x7f020042;
-        public static final int xihuan=0x7f020043;
-        public static final int xunhuan=0x7f020044;
+        public static final int stop=0x7f02003e;
+        public static final int stop_blue=0x7f02003f;
+        public static final int timer_blue=0x7f020040;
+        public static final int tools_blue=0x7f020041;
+        public static final int top_bar_bg=0x7f020042;
+        public static final int up_blue=0x7f020043;
+        public static final int xihuan=0x7f020044;
+        public static final int xunhuan=0x7f020045;
     }
     public static final class id {
         public static final int aboutme=0x7f090007;
-        public static final int action_settings=0x7f090017;
+        public static final int action_settings=0x7f090019;
         public static final int button1=0x7f090015;
         public static final int content=0x7f090008;
         public static final int guangbo=0x7f090004;
@@ -112,6 +113,8 @@ public final class R {
         public static final int menu=0x7f090014;
         public static final int mode=0x7f09000e;
         public static final int play=0x7f090010;
+        public static final int player_image=0x7f090017;
+        public static final int player_layout=0x7f090018;
         public static final int player_liebiao=0x7f090009;
         public static final int player_progressbar=0x7f09000d;
         public static final int player_qidian=0x7f09000a;

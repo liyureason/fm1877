@@ -28,6 +28,7 @@
         <activity android:name="com.beijing.fm1877.activity.aboutme"></activity>
         <activity android:name="com.beijing.fm1877.activity.wenzhang"></activity>
         <activity android:name="com.beijing.fm1877.activity.yinyue"></activity>
+        <service android:name="com.beijing.fm1877.service.PlayService"></service>
     </application>
 
 </manifest>

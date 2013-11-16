@@ -1,27 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.beijing.fm1877.view.SlidingLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/slidingLayout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:id="@+id/slidingLayout" >
-    
-<LinearLayout 
+    android:layout_height="match_parent" >
+
+    <LinearLayout
         android:id="@+id/menu"
-        android:layout_width="270dip"
+        android:layout_width="150dip"
         android:layout_height="fill_parent"
         android:layout_alignParentLeft="true"
         android:background="#00ccff"
-        android:visibility="invisible" 
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:visibility="invisible" >
 
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button" />
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button" />
+    </LinearLayout>
 
-</LinearLayout>
-
-<RelativeLayout 
+    <RelativeLayout
         android:id="@+id/content"
         android:layout_width="320dip"
         android:layout_height="fill_parent"
@@ -29,99 +28,110 @@
         android:background="#e9e9e9"
         android:visibility="visible" >
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/playerlogo" />
-
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:orientation="vertical" >
-
-        <TextView
-            android:id="@+id/player_liebiao"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content" />
-
-        <RelativeLayout
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content" >
-
-            <TextView
-                android:id="@+id/player_qidian"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-
-            <ImageView
-                android:id="@+id/player_state"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_toRightOf="@+id/player_qidian" />
-
-            <TextView
-                android:id="@+id/player_zhongdian"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true" />
-        </RelativeLayout>
-         <View android:layout_width="fill_parent"
-            android:layout_height="3dp"/>
-        
-        <ProgressBar
-            android:id="@+id/player_progressbar"
-            android:layout_width="fill_parent"
-            android:layout_height="3dp"
-            android:progress="20"
-            android:max="100"
-            
-            style="@style/progressBarHorizontal_color"
-              />
-        <View android:layout_width="fill_parent"
-            android:layout_height="10dp"/>
+        <ImageView
+            android:id="@+id/player_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/playerlogo" />
 
         <LinearLayout
+            android:id="@+id/player_layout"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal" >
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical" >
 
-            <ImageButton
-                android:id="@+id/mode"
-                style="@style/player_button"
-                android:layout_weight="1" 
-                android:src="@drawable/xunhuan"/>
+            <TextView
+                android:id="@+id/player_liebiao"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
 
-            <ImageButton
-                android:id="@+id/kuaitui"
-                style="@style/player_button"
-                android:layout_weight="1" 
-                android:src="@drawable/kuaitui"/>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
 
-            <ImageButton
-                android:id="@+id/play"
-                style="@style/player_button"
-                android:layout_weight="1" 
-                android:src="@drawable/kaishi"/>
+                <TextView
+                    android:id="@+id/player_qidian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" 
+                    android:text="00:00"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/baseColor"/>
 
-            <ImageButton
-                android:id="@+id/kuaijin"
-                style="@style/player_button"
-                android:layout_weight="1"
-                android:src="@drawable/xunhuan" />
+                <ImageView
+                    android:id="@+id/player_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/player_qidian" />
 
-            <ImageButton
-                android:id="@+id/xihuan"
-                style="@style/player_button"
-                android:layout_weight="1" 
-                android:src="@drawable/xihuan"/>
+                <TextView
+                    android:id="@+id/player_zhongdian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="30dp"
+                    android:textColor="@color/baseColor" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="3dp" />
+
+            <ProgressBar
+                android:id="@+id/player_progressbar"
+                style="@style/progressBarHorizontal_color"
+                android:layout_width="fill_parent"
+                android:layout_height="3dp"
+                android:max="100"
+                android:progress="20" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="10dp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/mode"
+                    style="@style/player_button"
+                    android:layout_weight="1"
+                    android:src="@drawable/xunhuan" />
+
+                <ImageView
+                    android:id="@+id/kuaitui"
+                    style="@style/player_button"
+                    android:layout_weight="1"
+                    android:src="@drawable/kuaitui" />
+
+                <ImageView
+                    android:id="@+id/play"
+                    style="@style/player_button"
+                    android:layout_weight="1"
+                    />
+
+                <ImageView
+                    android:id="@+id/kuaijin"
+                    style="@style/player_button"
+                    android:layout_weight="1"
+                    android:src="@drawable/kuaijin" />
+
+                <ImageView
+                    android:id="@+id/xihuan"
+                    style="@style/player_button"
+                    android:layout_weight="1"
+                    android:src="@drawable/xihuan" />
+            </LinearLayout>
         </LinearLayout>
-    </LinearLayout>
 
-    <ListView
-        android:id="@+id/player_textview"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent" />
+        <ListView
+            android:id="@+id/player_textview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/player_layout"
+            android:layout_below="@+id/player_image" />
+    </RelativeLayout>
 
-</RelativeLayout>
 </com.beijing.fm1877.view.SlidingLayout>
