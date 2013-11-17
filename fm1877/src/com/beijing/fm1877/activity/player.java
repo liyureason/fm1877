@@ -3,6 +3,7 @@ package com.beijing.fm1877.activity;
 import com.beijing.fm1877.R;
 import com.beijing.fm1877.R.layout;
 import com.beijing.fm1877.service.PlayService;
+import com.beijing.fm1877.util.ObjectTools;
 import com.beijing.fm1877.view.SlidingLayout;
 
 import android.app.Activity;
@@ -37,6 +38,7 @@ public class player extends Activity implements OnClickListener {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.player_home);
+		ObjectTools.lists.add(this);
 		slidingLayout = (SlidingLayout) findViewById(R.id.slidingLayout);
 		view2 = (ListView) findViewById(R.id.player_textview);
 		slidingLayout.setScrollEvent(view2);

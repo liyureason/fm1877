@@ -7,6 +7,7 @@ import java.util.Map;
 
 import com.beijing.fm1877.R;
 import com.beijing.fm1877.adapter.guangboAdapter;
+import com.beijing.fm1877.util.ObjectTools;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -28,6 +29,7 @@ public class guangbo extends Activity{
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.guangbo);
+		ObjectTools.lists.add(this);
 		mListView=(ListView)findViewById(R.id.guangbo_list);
 		//模拟数据
 		List<Map<String, Object>> lists=new ArrayList<Map<String,Object>>();
